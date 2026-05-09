@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-CAR-002",
+    "customer_id": "CUST-1003",
+    "policy_id": "CAR-7001",
+    "claim_type": "car",
+    "incident_date": "2026-04-01",
+    "description": "Attempted theft caused damage to the vehicle door and ignition.",
+    "claimed_amount": 3200,
+    "uploaded_documents": [{"document_type": "police report", "filename": "theft_police_report.pdf"}]
+  },
+  "expected": {
+    "claim_type": "car",
+    "clause_id": "CAR-302",
+    "missing_documents": ["photos", "repair quote"],
+    "human_review": false
+  }
+}

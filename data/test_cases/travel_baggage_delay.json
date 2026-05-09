@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-TRV-001",
+    "customer_id": "CUST-1001",
+    "policy_id": "TRV-9001",
+    "claim_type": "travel",
+    "incident_date": "2026-03-15",
+    "description": "Checked baggage was delayed by the airline for 30 hours after my flight to Lisbon. I bought essential clothing and toiletries.",
+    "claimed_amount": 420,
+    "uploaded_documents": [{"document_type": "receipt", "filename": "toiletries_invoice.pdf"}]
+  },
+  "expected": {
+    "claim_type": "travel",
+    "clause_id": "TRV-101",
+    "missing_documents": ["travel booking", "police report", "medical certificate"],
+    "human_review": false
+  }
+}

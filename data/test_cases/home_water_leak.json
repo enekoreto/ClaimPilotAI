@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-HOM-001",
+    "customer_id": "CUST-1002",
+    "policy_id": "HOM-3001",
+    "claim_type": "home",
+    "incident_date": "2026-02-01",
+    "description": "A sudden pipe leak caused water damage to the kitchen floor and cabinets.",
+    "claimed_amount": 2600,
+    "uploaded_documents": [{"document_type": "photos", "filename": "kitchen_photos.zip"}]
+  },
+  "expected": {
+    "claim_type": "home",
+    "clause_id": "HOM-201",
+    "missing_documents": ["repair quote", "invoice"],
+    "human_review": false
+  }
+}

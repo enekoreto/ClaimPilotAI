@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-CAR-003",
+    "customer_id": "CUST-1003",
+    "policy_id": "CAR-7001",
+    "claim_type": "car",
+    "incident_date": "2025-08-01",
+    "description": "Car collision damage reported from a parking incident yesterday with a garage estimate attached.",
+    "claimed_amount": 2800,
+    "uploaded_documents": [{"document_type": "garage estimate", "filename": "estimate.pdf"}]
+  },
+  "expected": {
+    "claim_type": "car",
+    "clause_id": "CAR-301",
+    "missing_documents": ["photos", "police report"],
+    "human_review": true
+  }
+}

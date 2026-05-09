@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-HOM-002",
+    "customer_id": "CUST-1002",
+    "policy_id": "HOM-3001",
+    "claim_type": "home",
+    "incident_date": "2026-01-12",
+    "description": "Burglary with forced entry through the back door. Laptop and jewellery were stolen.",
+    "claimed_amount": 5400,
+    "uploaded_documents": [{"document_type": "police report", "filename": "police_report.pdf"}]
+  },
+  "expected": {
+    "claim_type": "home",
+    "clause_id": "HOM-203",
+    "missing_documents": ["photos", "repair quote", "invoice"],
+    "human_review": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-CAR-001",
+    "customer_id": "CUST-1003",
+    "policy_id": "CAR-7001",
+    "claim_type": "car",
+    "incident_date": "2026-03-28",
+    "description": "Collision damage to the insured vehicle while parking. Front bumper and headlight need repair.",
+    "claimed_amount": 1900,
+    "uploaded_documents": [{"document_type": "photos", "filename": "car_damage_photos.zip"}]
+  },
+  "expected": {
+    "claim_type": "car",
+    "clause_id": "CAR-301",
+    "missing_documents": ["repair quote", "police report"],
+    "human_review": false
+  }
+}

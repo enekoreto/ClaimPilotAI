@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-HOM-003",
+    "customer_id": "CUST-1002",
+    "policy_id": "HOM-3001",
+    "claim_type": "home",
+    "incident_date": "2026-02-12",
+    "description": "Gradual wear and tear caused the bathroom sealant to fail and water marks appeared over several months.",
+    "claimed_amount": 900,
+    "uploaded_documents": []
+  },
+  "expected": {
+    "claim_type": "home",
+    "clause_id": "HOM-299",
+    "missing_documents": ["photos", "repair quote", "invoice"],
+    "human_review": true
+  }
+}

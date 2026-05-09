@@ -1,0 +1,18 @@
+{
+  "claim": {
+    "claim_id": "TC-TRV-002",
+    "customer_id": "CUST-1001",
+    "policy_id": "TRV-9001",
+    "claim_type": "travel",
+    "incident_date": "2026-04-20",
+    "description": "Emergency medical treatment abroad after an accident during a trip. Hospital sent an itemised invoice.",
+    "claimed_amount": 12500,
+    "uploaded_documents": [{"document_type": "invoice", "filename": "hospital_invoice.pdf"}]
+  },
+  "expected": {
+    "claim_type": "travel",
+    "clause_id": "TRV-103",
+    "missing_documents": ["travel booking", "police report", "medical certificate"],
+    "human_review": true
+  }
+}
